@@ -18,7 +18,6 @@ export default function UserHands() {
       if (hands.error) {
         setError(hands.message);
         setLoading("");
-        return;
       }
       setLoading("");
       setUserHands(hands);
