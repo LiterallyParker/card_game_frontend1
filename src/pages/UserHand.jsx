@@ -8,6 +8,7 @@ export default function UserHand() {
   const { setCards, type, setType } = useContext(CardsContext);
   const { token } = useContext(AuthContext);
   const [submitting, setSubmitting] = useState(false);
+  const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
 
   async function handleDeal() {
@@ -23,14 +24,14 @@ export default function UserHand() {
   }
 
   async function handleSaveHand() {
-    setSubmitting(true);
+    setSaving(true);
     const response = await requestSaveHand(token);
     if (response.error) {
       setError(response.message);
-      setSubmitting(false);
+      setSaving(false);
       return;
     }
-    setSubmitting(false);
+    setSaving(false);
     setError("");
   }
 
@@ -40,7 +41,7 @@ export default function UserHand() {
       <Cards submitting={submitting} />
       <div className="buttons">
       <button className="deal-button" disabled={submitting} onClick={(e) => handleDeal()}>Deal</button>
-      <button className="save-button" disabled={submitting} onClick={(e) => handleSaveHand()}>Save Hand</button>
+      <button className="save-button" disabled={saving} onClick={(e) => handleSaveHand()}>Save Hand</button>
       </div>
       {
         error && <p className="save-error">{error}</p>
