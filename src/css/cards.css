@@ -2,11 +2,10 @@
   font-size: 1.2rem;
   width: 65px;
   height: 110px;
-  margin: 8px;
+  margin: 5px;
   border-radius: 10px;
   border: 1px solid black;
-  border-bottom: 3px solid black;
-  border-left: 2px solid black;
+  border-bottom: 2px solid black;
 }
 .type {
   margin-top: 10rem;
