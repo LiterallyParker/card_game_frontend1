@@ -18,6 +18,8 @@ form button {
   padding: 4px 10px;
   font-family: inherit;
   font-weight: 600;
+  background-color: rgb(197, 197, 197);
+  color: black;
 }
 
 form button:hover {
