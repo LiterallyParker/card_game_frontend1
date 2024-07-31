@@ -118,7 +118,7 @@
   color: white;
 }
 .cards {
-  margin-top: -8rem;
+  margin-top: -5rem;
 }
 @media (max-height:600px) {
   .cards {
