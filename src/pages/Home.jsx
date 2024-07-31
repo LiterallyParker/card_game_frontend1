@@ -41,12 +41,10 @@ export default function Home() {
       <div>
         Did you think long enough? I didn't at first. So in the early iterations, if you were dealt this:
       </div>
-      <div className="emphasis">
-        [Ace, 2, 3, 4, 5]
-      </div>
+      <div className="emphasis center">[Ace, 2, 3, 4, 5]</div>
       <div className="home-paragraph">It wouldn't count as a straight, because the values appeard like like this:
       </div>
-      <div className="emphasis">
+      <div className="emphasis center">
         [14, 2, 3, 4, 5]
       </div>
       <div className="home-paragraph">I did get around to fixing this, a simple if statement, but this intoduced me to those little unaccounted for constraints.</div>
