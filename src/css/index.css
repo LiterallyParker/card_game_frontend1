@@ -42,3 +42,8 @@ input:focus {
 .no-margin {
   margin: 0;
 }
+@media (max-width:600px) {
+  :root {
+    margin-top: 0;
+  }
+}

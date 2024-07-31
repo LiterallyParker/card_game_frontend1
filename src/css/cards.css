@@ -117,9 +117,7 @@
   border-radius: 2rem;
   color: white;
 }
-.cards {
-  margin-top: -10rem;
-}
+
 @media (max-height:600px) {
   .cards {
     margin-left: 10rem;
