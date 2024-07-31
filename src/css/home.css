@@ -1,0 +1,49 @@
+.home-page {
+  margin-bottom: 10rem;
+}
+.title {
+  font-size: 3rem;
+  margin: 0;
+  text-decoration: underline;
+}
+.tagline {
+  margin: 0;
+}
+.bold {
+  font-weight: 600;
+}
+.home-paragraph {
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  margin: 10px;
+  width: 70rem;
+  text-indent: 2rem;
+  text-align: justify;
+}
+.emphasis {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: underline red;
+  margin: 10px;
+}
+.italic {
+  font-style: italic;
+}
+@media (max-width:1250px) {
+  .home-paragraph {
+    width: 40rem;
+  }
+}
+@media (max-width:600px) {
+  .title {
+    font-size: 2rem;
+  }
+  .home-paragraph {
+    width: 20rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  .emphasis {
+    font-size: 1.3rem;
+  }
+}

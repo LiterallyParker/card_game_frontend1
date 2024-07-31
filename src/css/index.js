@@ -1,0 +1,9 @@
+import './forms.css';
+import './navbar.css';
+import './cards.css';
+import './header.css';
+import './home.css';
+import './account.css';
+import './footer.css';
+import './hands.css'
+import './index.css';

@@ -1,0 +1,71 @@
+.hands-list {
+  display: flex;
+  flex-direction: column;
+}
+.cards-list {
+  display: flex;
+}
+.mini-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0.1rem 0.4rem;
+}
+.mini-card hr {
+  margin: 0;
+  width: 100px;
+  margin: 0 0.3rem;
+}
+.mini-card p {
+  margin: 0.3rem;
+}
+.mini-card-suit {
+  padding-bottom: 0.3rem;
+}
+.mini-card-rank {
+  padding-top: 0.3rem;
+}
+.mini-card.hearts, .mini-card.diamonds {
+  background-color: rgb(231, 56, 56);
+  color: white;
+}
+.mini-card.spades, .mini-card.clubs {
+  background-color: rgb(68, 68, 68);
+  color: white;
+}
+.list-hand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hand-type {
+  padding: 1.4rem 0.4rem;
+  width: 125px;
+  margin: 0.2rem 0.5rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.delete-hand {
+  height: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(205, 217, 228);
+}
+
+.delete-hand:hover {
+  background-color: rgb(174, 185, 195);
+  cursor: pointer;
+}
+
+.delete-hand:active {
+  background-color: rgb(205, 217, 228);
+  cursor: default;
+}
+
+.delete-hand:disabled {
+  background-color: gray;
+}

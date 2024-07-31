@@ -1,0 +1,166 @@
+.card {
+  font-size: 1.2rem;
+  width: 65px;
+  height: 110px;
+  margin: 8px;
+  border-radius: 10px;
+  border: 1px solid black;
+  border-bottom: 3px solid black;
+  border-left: 2px solid black;
+}
+.type {
+  margin-top: 10rem;
+  height: 30px;
+  padding: 0.4rem 1rem;
+  border-radius: 7px;
+}
+.pair {
+  background-color: rgb(176, 252, 166);
+}
+.two {
+ background-color: rgb(170, 119, 218);
+ color: white;
+}
+.three {
+  background-color: rgb(255, 102, 102);
+  color: white;
+}
+.straight {
+  background-color: rgb(248, 246, 107);
+}
+.flush {
+  background-color: rgb(210, 132, 44);
+  color: white;
+}
+.fullhouse {
+  background-color: rgb(106, 180, 203);
+  color: white;
+}
+.four {
+  background-color: hotpink;
+  color: white;
+}
+.royal {
+  background-color: rgb(205, 181, 25);
+  color: rgb(91, 79, 3);
+  text-decoration: underline 3px rgb(140, 111, 3);
+}
+.rank {
+  margin: 0.7rem;
+}
+.diamonds, .hearts {
+  color: red;
+}
+.spades, .clubs {
+  color: black;
+}
+.deal-button {
+  position: fixed;
+  bottom: 8rem;
+  width: 140px;
+  height: 60px;
+  font-size: 1.3rem;
+  color: white;
+  background-color: rgb(77, 195, 56);
+  border: none;
+  margin: 0;
+  padding: 7px 15px;
+  border-radius: 10px;
+  border-bottom: 3px solid black;
+}
+.buttons {
+  height: 3rem;
+}
+.save-button {
+  position: fixed;
+  bottom: 8rem;
+  right: 3rem;
+  width: 170px;
+  height: 60px;
+  font-size: 1.3rem;
+  color: white;
+  background-color: rgb(56, 128, 195);
+  padding: 7px 15px;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 3px solid black;
+}
+.deal-button:hover {
+  cursor: pointer;
+}
+.save-button:hover {
+  cursor: pointer;
+}
+.save-button:active {
+  background-color: rgb(40, 92, 141);
+  cursor: default;
+  border-bottom: 3px solid rgb(40, 92, 141);
+}
+.deal-button:active {
+  background-color: rgb(51, 130, 37);
+  cursor: default;
+  border-bottom: 3px solid rgb(51, 130, 37);
+}
+.deal-button:disabled {
+  background-color: rgb(51, 130, 37);
+  cursor: default;
+}
+.save-button:disabled {
+  background-color: rgb(40, 92, 141);
+  cursor: default;
+}
+.save-error {
+  position: absolute;
+  bottom: 12rem;
+  background-color: red;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  color: white;
+}
+@media (max-height:600px) {
+  .cards {
+    margin-left: 10rem;
+    margin-bottom: 5rem;
+  }
+}
+@media (min-width:600px) {
+  .card {
+    width: 100px;
+    height: 160px;
+  }
+  .rank {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+  }
+  .deal-button {
+    position: inherit;
+    margin: 1rem;
+  }
+  .save-button {
+    position: inherit;
+    margin: 1rem;
+  }
+  .save-error {
+    bottom: 5rem;
+  }
+}
+.hearts .card-image {
+  width: 35px;
+  height: 35px;
+  padding: 5px 0 20px;
+}
+.spades .card-image {
+  width: 35px;
+  height: 45px;
+  padding-bottom: 15px;
+}
+.clubs .card-image {
+  width: 40px;
+  height: 45px;
+  padding-bottom: 15px;
+}
+.diamonds .card-image {
+  width: 40px;
+  height: 50px;
+  padding-bottom: 10px;
+}
