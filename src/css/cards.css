@@ -57,6 +57,7 @@
 .deal-button {
   position: fixed;
   bottom: 8rem;
+  left: 3rem;
   width: 140px;
   height: 60px;
   font-size: 1.3rem;
@@ -117,6 +118,9 @@
   border-radius: 2rem;
   color: white;
 }
+.cards {
+  margin-top: -10rem;
+}
 @media (max-height:600px) {
   .cards {
     margin-left: 10rem;
@@ -124,6 +128,9 @@
   }
 }
 @media (min-width:600px) {
+  .cards {
+    margin-top: 0;
+  }
   .card {
     width: 100px;
     height: 160px;

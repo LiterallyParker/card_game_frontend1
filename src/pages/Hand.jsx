@@ -20,7 +20,7 @@ export default function Hand() {
   };
 
   return (
-    <div className="disable-cursor-line center">
+    <div className="disable-cursor-line center cards">
       <h2 className={submitting ? "type" : "type " + type.toLowerCase()}>{!submitting && type && type + "!"}</h2>
       <Cards submitting={submitting} />
       <button className="deal-button" onClick={(e) => handleDeal()}>Deal</button>
