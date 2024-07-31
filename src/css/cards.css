@@ -57,7 +57,7 @@
   position: fixed;
   bottom: 8rem;
   left: 3rem;
-  width: 140px;
+  width: 125px;
   height: 60px;
   font-size: 1.3rem;
   color: white;
@@ -75,9 +75,9 @@
   position: fixed;
   bottom: 8rem;
   right: 3rem;
-  width: 170px;
+  width: 125px;
   height: 60px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: white;
   background-color: rgb(56, 128, 195);
   padding: 7px 15px;
