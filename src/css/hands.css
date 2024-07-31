@@ -69,3 +69,54 @@
 .delete-hand:disabled {
   background-color: gray;
 }
+
+.mini-card-suit.diamonds, .mini-card-suit.hearts, .mini-card-suit.spades, .mini-card-suit.clubs {
+  color: white;
+}
+
+@media (max-width:600px) {
+  .list-hand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mini-card {
+    font-size: 0.9rem;
+    align-items: center;
+    width: 70px;
+    border-radius: 10px;
+    margin: 0.1rem;
+    padding: 0;
+  }
+  .mini-card-suit.diamonds {
+    font-size: 0.7rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-top: 2px;
+  }
+  .mini-card hr {
+    width: 60px;
+  }
+  .seperation {
+    width: 300px;
+  }
+  .hand-type {
+    padding: 0.4rem 0.5rem;
+    margin: 0.5rem 0.5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .delete-hand {
+    height: fit-content;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(205, 217, 228);
+  }
+  
+}

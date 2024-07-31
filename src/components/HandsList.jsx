@@ -57,7 +57,7 @@ export default function UserHands() {
               </button>
             </div>
             <div>
-              <hr />
+              <hr className="seperation center"/>
             </div>
           </div>
         )
