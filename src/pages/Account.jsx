@@ -17,8 +17,6 @@ export default function Account() {
               <hr width={100} />
               <h3 className="no-margin">{user.firstname} {user.lastname}</h3>
               <hr width={100} />
-              <p className="no-margin">{user.email}</p>
-              <hr width={100} />
               <p className="no-margin">{user.role} user</p>
               <hr width={100} />
             </div>

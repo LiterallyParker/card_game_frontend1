@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../context/Authorization";
-import { getUserHands, requestDeleteHand } from "../api/hands";
+import { requestUserHands, requestDeleteHand } from "../api/hands";
 import CardsList from "./CardsList";
 
 export default function UserHands() {
@@ -13,7 +13,7 @@ export default function UserHands() {
   async function fetchUserHands() {
     
     if (user) {
-      const hands = await getUserHands(user.id);
+      const hands = await requestUserHands(user.id);
       setError("");
       if (hands.error) {
         setError(hands.message);
@@ -48,10 +48,10 @@ export default function UserHands() {
         userHands.length > 0 && userHands.map(hand =>
           <div key={hand.id}>
             <div className="list-hand">
-              <div className={`hand-type ${hand.type.name.toLowerCase()}`}>
-                {hand.type.name}
+              <div className={`hand-type ${hand.entry.type.name.toLowerCase()}`}>
+                {hand.entry.type.name}
               </div>
-              <CardsList cards={hand.cards} />
+              <CardsList cards={hand.entry.cards} />
               <button className="delete-hand" disabled={deleting} onClick={(e) => handleDeleteHand(hand.id)}>
                 <i className="fa-solid fa-trash"></i>
               </button>

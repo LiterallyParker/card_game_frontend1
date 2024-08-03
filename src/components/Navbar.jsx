@@ -23,6 +23,7 @@ export default function Navbar() {
       <Link className="navbar-link" to="/" onClick={logOut}>Logout</Link>
       </>
     }
+      <Link className="navbar-link" to="/leaderboard">Leaderboard</Link>
     </div>
   )
 }

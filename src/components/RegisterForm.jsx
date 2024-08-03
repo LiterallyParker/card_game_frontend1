@@ -13,14 +13,12 @@ export default function RegisterForm() {
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastName] = useState("");
   const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmedPassword, setConfirmedPassword] = useState("");
 
   // CSS States
   const [error, setError] = useState("");
   const [submitting, setSubmitting] = useState(false);
-  const [emailError, setEmailError] = useState("");
   const [usernameError, setUsernameError] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [confirmedPasswordError, setConfirmedPasswordError] = useState("");
@@ -29,9 +27,6 @@ export default function RegisterForm() {
     resetFields();
     if (!username) {
       setUsernameError("field-error");
-    };
-    if (!email) {
-      setEmailError("field-error");
     };
     if (!password) {
       setPasswordError("field-error");
@@ -49,7 +44,6 @@ export default function RegisterForm() {
 
   function resetFields() {
     setUsernameError("");
-    setEmailError("");
     setPasswordError("");
     setConfirmedPasswordError("");
   }
@@ -57,13 +51,12 @@ export default function RegisterForm() {
   async function handleSubmit(e) {
     e.preventDefault();
     setSubmitting(true);
-    const response = await requestNewUser({ username, firstname, lastname, email, password, confirmedPassword });
+    const response = await requestNewUser({ username, firstname, lastname, password, confirmedPassword });
 
     if (response.error) {
       resetFields();
       if (response.name === "NoFieldsError") setEmptyFieldsWrong();
       if (response.name === "UsernameError") setUsernameError("field-error");
-      if (response.name === "EmailError") setEmailError("field-error");
       if (response.name === "PasswordMatchError") setPasswordsError();
       setError(response.message);
       return setSubmitting(false);
@@ -95,10 +88,6 @@ export default function RegisterForm() {
           <div className="form-row">
             <label htmlFor="firstname"><span className="required">*</span>Username:</label>
             <input className={`input ${usernameError}`} type="text" value={username} onChange={(e) => { setUsername(e.target.value) }} />
-          </div>
-          <div className="form-row">
-            <label htmlFor="firstname"><span className="required">*</span>Email:</label>
-            <input className={`${emailError} input`} type="email" value={email} onChange={(e) => { setEmail(e.target.value) }} />
           </div>
           <div className="form-row">
             <label htmlFor="firstname"><span className="required">*</span>Password:</label>

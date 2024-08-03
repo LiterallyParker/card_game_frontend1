@@ -1,0 +1,43 @@
+.entry-placement {
+    padding: 0.5rem 0.8rem;
+    border-radius: 50%;
+}
+.entry-username {
+    padding: 0.5rem;
+    width: 125px;
+    text-align: center;
+}
+.first, .second, .third {
+    color: white;
+}
+.first {
+    background-color: rgb(228, 212, 39);
+}
+.second {
+    background-color: rgb(190, 187, 187);
+}
+.third {
+    background-color: rgb(194, 100, 57);
+}
+.center-text {
+    text-align: center;
+}
+.user-entry {
+    text-decoration: underline 2px red;
+}
+.entry-head {
+    display: flex;
+    align-items: center;
+}
+@media (max-width:1100px) {
+    .entry-placement {
+        padding: 0.3rem 0.6rem;
+    }
+    .leaderboard.list-hand {
+        display: flex;
+        flex-direction: column;
+    }
+    .leaderboard .hand-type {
+        padding: 0.5rem;
+    }
+}

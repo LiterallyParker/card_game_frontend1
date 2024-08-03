@@ -1,10 +1,10 @@
 .navbar {
   display: flex;
-  width: 30vw;
+  width: 20vw;
   justify-content: space-around;
 }
 .navbar-link {
-  padding: 0.2rem 1rem;
+  padding: 0.2rem 0.7rem;
 }
 .navbar-link:hover {
   background-color: rgb(128, 43, 17);

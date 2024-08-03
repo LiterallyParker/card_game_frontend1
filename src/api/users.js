@@ -19,7 +19,7 @@ export async function requestUser({ username, password }) {
   };
 };
 
-export async function requestNewUser({ username, firstname, lastname, email, password, confirmedPassword }) {
+export async function requestNewUser({ username, firstname, lastname, password, confirmedPassword }) {
 
   try {
     const response = await fetch(`${ENDPOINT}/users/register`, {
@@ -27,7 +27,7 @@ export async function requestNewUser({ username, firstname, lastname, email, pas
       headers: {
         "Content-Type":"application/json"
       },
-      body: JSON.stringify({ username, firstname, lastname, email, password, confirmedPassword })
+      body: JSON.stringify({ username, firstname, lastname, password, confirmedPassword })
     });
     const result = await response.json();
     return result;

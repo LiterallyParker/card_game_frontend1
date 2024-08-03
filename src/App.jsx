@@ -10,6 +10,7 @@ import Hand from "./pages/Hand"
 import UserHand from "./pages/UserHand"
 import UserHands from "./pages/UserHands"
 import Account from "./pages/Account"
+import Leaderboard from "./pages/Leaderboard"
 
 // CSS
 import './css'
@@ -28,6 +29,7 @@ function App() {
           <Route path="/user-hand" element={<UserHand />} />
           <Route path="/account" element={<Account />} />
           <Route path="/my-hands" element={<UserHands />} />
+          <Route path="/Leaderboard" element={<Leaderboard />} />
         </Routes>
         <Footer />
       </Router>

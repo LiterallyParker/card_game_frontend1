@@ -5,5 +5,6 @@ import './header.css';
 import './home.css';
 import './account.css';
 import './footer.css';
-import './hands.css'
+import './hands.css';
+import './leaderboard.css';
 import './index.css';

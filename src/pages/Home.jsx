@@ -9,8 +9,13 @@ export default function Home() {
       <h1 className="title">Parker's Poker</h1>
       <h3 className="tagline">Test your luck!</h3>
       <hr width={350} />
-      <div className="home-paragraph">Welcome to Parker's Poker! This is one of my first fullstack applications, and what you're looking at is the front-end.</div>
-      <div className="home-paragraph bold">If you're interested in the backend, and the structure of this site, keep reading! If you're one of my friends and just want to play, click <Link to={user ? "/user-hand" : "/hand"}>here!</Link></div>
+      <div className="home-paragraph center-text">Welcome to Parker's Poker! This is one of my first fullstack applications, and what you're looking at is the front-end.</div>
+      <Link to={user ? "/user-hand" : "/hand"}>
+      <button className="home deal-button">
+        Click here to play!
+      </button>
+      </Link>
+      <div className="home-paragraph bold center-text">If you're interested in the backend, and the structure of this site, keep reading!</div>
       <div className="home-paragraph">When I began learning to code, I came across <a href="https://www.youtube.com/watch?v=eWRfhZUzrAc">this</a> video. At around the 3:27.00 mark, our instructor walks us through the process of making a BlackJack game in Python. I didn't quite have the power to do it on my own just yet, so I followed along. When I was done, I noticed that by making a game with rules I already understood, I better understood how these different elements of code collided together to create almost anything.</div>
       <div className="home-paragraph">When I finished the project, I took it upon myself to clean it up. I Made certain parts more efficient, with mapping, filtering, hash-mapping and more. I became way more confident in my logic abilities, and along the way, my casino abilities too! (Will be used wisely.) </div>
       <div className="home-paragraph">Once I felt there was no more to do than small touch ups, I moved on to a new challenge constructed by my very own brain.</div>

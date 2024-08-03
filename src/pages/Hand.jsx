@@ -24,7 +24,7 @@ export default function Hand() {
       <h2 className={submitting ? "type" : "type " + type.toLowerCase()}>{!submitting && type && type + "!"}</h2>
       <Cards submitting={submitting} />
       <button className="deal-button" onClick={(e) => handleDeal()}>Deal</button>
-      <p><Link to="/register">Register</Link> or <Link to="/login">Login</Link> to start saving your hands!</p>
+      <p className="center-text"><Link to="/register">Register</Link> or <Link to="/login">Login</Link> to start saving your hands and submitting to the leaderboard!</p>
     </div>
   );
 };

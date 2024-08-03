@@ -15,6 +15,21 @@ export async function requestUserHand(token) {
   };
 };
 
+export async function requestLeaderboard() {
+  try {
+    const response = await fetch(`${ENDPOINT}/leaderboard`, {
+      headers: {
+        "Content-Type":"application/json"
+      }
+    })
+    const result = await response.json();
+    return result;
+
+  } catch (error) {
+    console.error(error);
+  }
+}
+
 export async function requestNewUserHand(token) {
   try {
     const response = await fetch(`${ENDPOINT}/hands`, {
@@ -31,7 +46,7 @@ export async function requestNewUserHand(token) {
   };
 };
 
-export async function getUserHands(userId) {
+export async function requestUserHands(userId) {
   try {
     const response = await fetch(`${ENDPOINT}/hands/${userId}`, {
       headers: {
